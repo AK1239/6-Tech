@@ -192,6 +192,7 @@ body {
 .about-sections {
   display: flex;
   justify-content: space-around;
+  gap: 20px;
 }
 
 .about-left {
