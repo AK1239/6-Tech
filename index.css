@@ -565,7 +565,7 @@ body {
 
 .contact-title h2 {
   padding: 0px 40px;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
   color: #fff;
 }
@@ -582,7 +582,7 @@ body {
 }
 
 .contact-left h2 {
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 700;
   background: linear-gradient(135deg, #8547c6 25%, #b845c1 62%, #ab5d8a 95%);
   background-clip: text;
@@ -593,7 +593,7 @@ body {
 .contact-left p {
   max-width: 550px;
   color: #d8d8d8;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 35px;
 }
 
@@ -620,7 +620,7 @@ body {
 
 .contact-right label {
   color: #d8d8d8;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 500;
 }
 
@@ -633,7 +633,7 @@ body {
   background-color: #32323c;
   color: #a0a0a0;
   font-family: "Poppins";
-  font-size: 19px;
+  font-size: 17px;
 }
 
 .contact-right textarea {
@@ -645,7 +645,7 @@ body {
   background: #32323c;
   color: #a0a0a0;
   font-family: "Poppins";
-  font-size: 19px;
+  font-size: 17px;
 }
 .contact-right select {
   border: none;
@@ -656,7 +656,7 @@ body {
   background-color: #32323c;
   color: #a0a0a0;
   font-family: "Poppins";
-  font-size: 19px;
+  font-size: 17px;
 }
 .contact-right option {
   padding: 10px;
@@ -667,7 +667,7 @@ body {
   color: white;
   border-radius: 50px;
   background: linear-gradient(264deg, purple, #7d15ad 106.28%);
-  font-size: 19px;
+  font-size: 17px;
   padding: 20px 60px;
   margin-bottom: 50px;
   margin-top: 20px;
@@ -695,7 +695,7 @@ body {
 }
 
 .footer-top p {
-  font-size: 18px;
+  font-size: 17px;
   max-width: 600px;
   color: white;
   margin-left: 20px;
@@ -758,7 +758,9 @@ body {
   }
 
   .preview {
-    padding: 30px 18px;
+    padding: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
   }
 
@@ -776,6 +778,19 @@ body {
   .preview .heading-span {
     justify-content: center;
     width: 95%;
+  }
+
+  .benefits {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+
+  .benefit-cards {
+    gap: 30px;
+  }
+
+  .ourwork {
+    padding: 50px 40px;
   }
 }
 
@@ -844,9 +859,18 @@ body {
     margin-bottom: 25px;
   }
 
+  .about-sections {
+    flex-direction: column;
+  }
+
   .about h4 {
     margin-bottom: 30px;
   }
+
+  .about-hide {
+    display: none;
+  }
+
   .about-left {
     align-items: unset;
     text-align: center;
@@ -857,12 +881,12 @@ body {
     text-align: center;
     font-size: 16px;
   }
-  .about-right img {
-    display: none;
-  }
 
+  .about-right img {
+    width: 90%;
+  }
   .navbar {
-    padding: 20px 50px;
+    padding: 10px 20px;
   }
 
   .nav-connect {
@@ -911,6 +935,10 @@ body {
     margin-bottom: 30px;
     font-size: 1.4rem;
   }
+
+  .tcard-section {
+    gap: 15px;
+  }
 }
 
 @media (max-width: 798px) {
@@ -918,8 +946,14 @@ body {
     padding: 70px 0px;
   }
 
-  .accordion {
+  .preview {
+    width: 88%;
   }
+
+  .preview .heading-paragraph h1 {
+    width: 100%;
+  }
+
   .preview .heading-paragraph span {
     font-size: 16px;
   }
