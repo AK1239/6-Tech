@@ -27,3 +27,25 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+
+    // Calculate the reveal point for each element
+    var revealPosition = revealtop - windowheight + revealpoint;
+
+    // If the reveal point is reached, add the 'on' class
+    if (window.scrollY > revealPosition) {
+      reveals[i].classList.add("on");
+    } else {
+      reveals[i].classList.remove("on");
+    }
+  }
+}

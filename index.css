@@ -16,6 +16,18 @@ body {
   margin: 0 auto;
 }
 
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.on {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 /*Navbar*/
 
 .navbar {
@@ -93,7 +105,8 @@ body {
 /*Preview*/
 
 .top-container {
-  background-image: linear-gradient(135deg, #8547c6 25%, #b845c1 62%, #ab5d8a 95%);
+  /* background-image: linear-gradient(135deg, rgb(108, 62, 145) 25%, rgb(159, 99, 163) 62%, rgb(100, 59, 105) 95%); */
+  background-image: linear-gradient(135deg, rgb(128, 55, 143) 25%, rgb(189, 90, 159) 62%, rgb(102, 36, 96) 95%);
 }
 
 .preview {
@@ -225,6 +238,10 @@ body {
   background-color: white;
   text-align: center;
   padding-bottom: 100px;
+}
+.section {
+  display: flex;
+  min-height: 100vh;
 }
 
 .section-heading {
@@ -526,15 +543,18 @@ body {
 }
 
 .accordion::before {
-  content: "\002B";
+  content: "\002B"; /* Plus sign */
   font-weight: bold;
   font-size: 19px;
   margin-right: 8px;
 }
 
-.active:after {
-  content: "\2212";
+.active::before {
+  content: "\2212"; /* Minus sign */
   color: #b707ec;
+  font-weight: bold;
+  font-size: 19px;
+  margin-right: 8px;
 }
 
 .panel {
@@ -802,7 +822,7 @@ body {
 
   .contact-title h2 {
     padding: 0;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
   }
 
@@ -999,5 +1019,16 @@ body {
 
   .middle-container h2::before {
     display: none;
+  }
+
+  .footer-bottom-left ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .benefit-heading h3 {
+    font-size: 17px;
   }
 }
